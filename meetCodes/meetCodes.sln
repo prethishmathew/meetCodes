@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "meetCodes", "src\meetCodes\meetCodes.xproj", "{CB7BE070-FE3A-43F4-ABD6-C8824D17C20A}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "meetCodes.Services", "src\MeetCodeServices\meetCodes.Services.xproj", "{12604CD5-5CA3-4397-9BB2-C65B7018E793}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MeetCodes.Services", "src\MeetCode.Services\MeetCodes.Services.xproj", "{12604CD5-5CA3-4397-9BB2-C65B7018E793}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MeetCodes.Data", "src\MeetCodes.Data\MeetCodes.Data.xproj", "{D11A20B7-2A44-486F-B9DA-934458DEF80D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +30,10 @@ Global
 		{12604CD5-5CA3-4397-9BB2-C65B7018E793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12604CD5-5CA3-4397-9BB2-C65B7018E793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12604CD5-5CA3-4397-9BB2-C65B7018E793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11A20B7-2A44-486F-B9DA-934458DEF80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11A20B7-2A44-486F-B9DA-934458DEF80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11A20B7-2A44-486F-B9DA-934458DEF80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11A20B7-2A44-486F-B9DA-934458DEF80D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,5 +41,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CB7BE070-FE3A-43F4-ABD6-C8824D17C20A} = {6794D64C-8576-403E-83C3-7E320B83A21B}
 		{12604CD5-5CA3-4397-9BB2-C65B7018E793} = {6794D64C-8576-403E-83C3-7E320B83A21B}
+		{D11A20B7-2A44-486F-B9DA-934458DEF80D} = {6794D64C-8576-403E-83C3-7E320B83A21B}
 	EndGlobalSection
 EndGlobal

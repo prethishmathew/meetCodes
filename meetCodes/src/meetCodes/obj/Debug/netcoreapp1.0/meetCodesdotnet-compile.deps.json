@@ -27,7 +27,8 @@
           "Microsoft.Extensions.Logging": "1.0.0",
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "MeetCode.Services": "1.0.0"
         },
         "compile": {
           "meetCodes.dll": {}
@@ -2580,6 +2581,14 @@
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
         }
+      },
+      "MeetCode.Services/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "MeetCode.Services.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v1.0/": {
@@ -2596,7 +2605,8 @@
           "Microsoft.Extensions.Logging": "1.0.0",
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "MeetCode.Services": "1.0.0"
         },
         "runtime": {
           "meetCodes.dll": {}
@@ -4137,6 +4147,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.Encoding": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -5022,6 +5035,14 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "MeetCode.Services/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "MeetCode.Services.dll": {}
         }
       }
     }
@@ -5976,6 +5997,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-+9hlI4oCJ+5SubEl8uPuMFgPZD4XtiK9vgVQpyCe+BUm6EObKfQ+CNt4xPJIiANgxi7UoEO11Q/gPklmoVx0nA=="
+    },
+    "MeetCode.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
