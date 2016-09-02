@@ -1,18 +1,28 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MeetCodes.Data.Models;
+using MeetCodes.Data.UnitOfWork;
 
 namespace meetCodes.Services.MeetCodeService
 {
     public class MeetCodeServiceDefault:IMeetCodeService
     {
-        public Task<string> GetMeetCodesAsync(string id)
+        private readonly IUnitOfWork _unitOfWork;
+        public MeetCodeServiceDefault(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<MeetCode> GetMeetCodesAsync(string id)
+        {
+            return await Task.Run(() => _unitOfWork.MeetCodeRepository.GetById(id));
         }
 
-        public Task<string> CreateMeetCodesAsync(string meetCode)
+        public async Task<MeetCode> CreateMeetCodesAsync(MeetCode meetCode)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => _unitOfWork.MeetCodeRepository.Insert(meetCode));
+            return meetCode;
         }
+
+       
     }
 }

@@ -1524,6 +1524,7 @@
       },
       "MeetCode.Services/1.0.0": {
         "dependencies": {
+          "MeetCodes.Data": "1.0.0",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {

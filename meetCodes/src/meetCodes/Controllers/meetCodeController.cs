@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using meetCodes.Services.MeetCodeService;
+using MeetCodes.Data.Models;
 
 namespace meetCodes.Controllers
 {
@@ -21,9 +19,9 @@ namespace meetCodes.Controllers
             return Ok(await _meetCodeService.GetMeetCodesAsync(id));
         }
 
-        public async Task<IActionResult> Post(string id)
+        public async Task<IActionResult> Post(MeetCode meetCode)
         {
-            return Ok(await _meetCodeService.CreateMeetCodesAsync(id));
+            return Ok(await _meetCodeService.CreateMeetCodesAsync(meetCode));
         }
     }
 }

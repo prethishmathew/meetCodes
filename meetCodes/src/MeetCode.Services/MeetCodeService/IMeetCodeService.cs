@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MeetCodes.Data.Models;
 
 namespace meetCodes.Services.MeetCodeService
 {
     public interface IMeetCodeService
     {
-        Task<string> GetMeetCodesAsync(string id);
-        Task<string> CreateMeetCodesAsync(string meetCode);
+        Task<MeetCode> GetMeetCodesAsync(string id);
+        Task<MeetCode> CreateMeetCodesAsync(MeetCode meetCode);
     }
 }
