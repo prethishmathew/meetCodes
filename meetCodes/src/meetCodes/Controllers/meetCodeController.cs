@@ -13,12 +13,13 @@ namespace meetCodes.Controllers
         {
             _meetCodeService = meetCodeService;
         }
-
+        [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {            
             return Ok(await _meetCodeService.GetMeetCodesAsync(id));
         }
 
+        [HttpPost]
         public async Task<IActionResult> Post(MeetCode meetCode)
         {
             return Ok(await _meetCodeService.CreateMeetCodesAsync(meetCode));

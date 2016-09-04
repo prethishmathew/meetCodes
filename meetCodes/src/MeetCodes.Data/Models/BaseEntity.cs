@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace MeetCodes.Data.Models
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
+        public Guid Id { get; set; }
+
     }
 }
