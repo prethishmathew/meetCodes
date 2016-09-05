@@ -183,6 +183,7 @@
 --reference:C:\Users\pmathew\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\bin\Debug\netstandard1.6\MeetCode.Services.dll
 --reference:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\bin\Debug\netstandard1.6\MeetCodes.Data.dll
+--reference:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\bin\Debug\netstandard1.6\MeetCodes.Plugins.dll
 --resource:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\obj\Debug\netcoreapp1.0\meetCodesdotnet-compile.deps.json",meetCodes.deps.json
 C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Program.cs
 C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Startup.cs

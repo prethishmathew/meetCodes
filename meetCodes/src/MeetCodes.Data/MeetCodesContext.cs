@@ -13,7 +13,15 @@ namespace MeetCodes.Data
         {
             
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MeetCode>()
+                .ToTable("MeetCode");
 
+            modelBuilder.Entity<MeetCode>()
+                .Property(b => b.Code)
+                .HasColumnName("Code");
+        }
         public DbSet<MeetCode> MeetCodes { get; set; }
     }
 }

@@ -16,7 +16,8 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "MeetCode.Services": "1.0.0-*",
-    "MeetCodes.Data": "1.0.0-*" },
+    "MeetCodes.Data": "1.0.0-*",
+    "MeetCodes.Plugins": "1.0.0-*" },
 
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"

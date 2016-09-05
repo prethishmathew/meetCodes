@@ -1,1 +1,11 @@
-#:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\MeetCodes.Plugins.xproj
+#:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\MeetCodes.Plugins.xproj
+#:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\MeetCodes.Services.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\MeetCodes.Services.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\MeetCodes.Plugins.xproj
+#:C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\meetCodes.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\meetCodes.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\MeetCodes.Services.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\meetCodes.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\meetCodes.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\MeetCodes.Plugins.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\MeetCodes.Services.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj
+C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\MeetCodes.Data.xproj|C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\MeetCodes.Plugins.xproj

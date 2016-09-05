@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using mstum.utils;
 using MeetCodes.Data.InterFace;
 using MeetCodes.Data.Models;
 
@@ -19,8 +21,10 @@ namespace MeetCodes.Data.Repository
 
         public virtual MeetCode GetById(string id)
         {
-            var number = BitConverter.ToString(Convert.FromBase64String(id)) ;
-            return Context.MeetCodes.FirstOrDefault(x => x.Code == BigInteger.Parse(number));
+            var number = Base36.Decode(id) ;
+            //Performance : Dont replace with single call to FirstOrdefault.
+            var data = Context.MeetCodes.Where(x => x.Code.Equals(number));
+            return data.FirstOrDefault();
         }
     }
 }

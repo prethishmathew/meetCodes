@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MeetCodes.Plugins;
 
 namespace meetCodes
 {
@@ -41,6 +42,7 @@ namespace meetCodes
             var connectionstring = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<MeetCodesContext>(options => options.UseSqlServer(connectionstring));
             services.AddMvc();
+            services.InjectDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

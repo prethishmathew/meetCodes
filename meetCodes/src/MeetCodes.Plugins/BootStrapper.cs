@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -14,17 +15,24 @@ namespace MeetCodes.Plugins
 
         public static void InjectDependencies(this IServiceCollection services)
         {
-            foreach (var compilationLibrary in DependencyContext.Default.RuntimeLibraries)
+            var meetCodeAssemblies = DependencyContext.Default.RuntimeLibraries.Where(x => x.Name.ToUpper().Contains("MEETCODE"));
+            foreach (var compilationLibrary in meetCodeAssemblies)
             {
 
-               if (compilationLibrary.Name.Contains("meetCode"))
+               if (compilationLibrary.Name.ToUpper().Contains("MEETCODE"))
                { 
                    var assembly = Assembly.Load(new AssemblyName(compilationLibrary.Name));
-                   var q = assembly.GetTypes().Where(x => x.GetInterfaces().Length > 0 && x.GetTypeInfo().IsClass);
+                   var q = assembly.GetTypes().Where(x => x.GetInterfaces().Length > 0 && x.GetTypeInfo().IsClass && !x.GetTypeInfo().IsAbstract);
 
                     foreach (var service in q )
                     {
-                        services.AddTransient(Type.GetType(service.FullName), Type.GetType(service.GetInterfaces().FirstOrDefault().FullName));
+                        foreach (var interfaces in service.GetInterfaces().Where(x => x.FullName.ToUpper().Contains("MEETCODE") ))
+                        {
+                           
+                           services.AddTransient(interfaces, service);
+                           
+                        }
+                        
                     }
                 }
                

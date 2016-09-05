@@ -29,7 +29,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "MeetCode.Services": "1.0.0",
-          "MeetCodes.Data": "1.0.0"
+          "MeetCodes.Data": "1.0.0",
+          "MeetCodes.Plugins": "1.0.0"
         },
         "runtime": {
           "meetCodes.dll": {}
@@ -1536,6 +1537,7 @@
       },
       "MeetCodes.Data/1.0.0": {
         "dependencies": {
+          "MeetCodes.Plugins": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
           "NETStandard.Library": "1.6.0"
         },
@@ -1544,6 +1546,19 @@
         },
         "compile": {
           "MeetCodes.Data.dll": {}
+        }
+      },
+      "MeetCodes.Plugins/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+          "Microsoft.Extensions.DependencyModel": "1.0.0"
+        },
+        "runtime": {
+          "MeetCodes.Plugins.dll": {}
+        },
+        "compile": {
+          "MeetCodes.Plugins.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3642,6 +3657,11 @@
       "sha512": ""
     },
     "MeetCodes.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeetCodes.Plugins/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
