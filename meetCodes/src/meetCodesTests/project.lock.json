@@ -4175,6 +4175,7 @@
           "MeetCode.Services": "1.0.0",
           "MeetCodes.Data": "1.0.0",
           "MeetCodes.Plugins": "1.0.0",
+          "MeetCodes.Services": "1.0.0",
           "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "1.0.0",
           "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
@@ -4223,6 +4224,20 @@
         },
         "runtime": {
           "netstandard1.6/MeetCodes.Plugins.dll": {}
+        }
+      },
+      "MeetCodes.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "MeetCodes.Data": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/MeetCodes.Services.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/MeetCodes.Services.dll": {}
         }
       }
     }
@@ -10721,6 +10736,11 @@
       "type": "project",
       "path": "../MeetCodes.Plugins/project.json",
       "msbuildProject": "../MeetCodes.Plugins/MeetCodes.Plugins.xproj"
+    },
+    "MeetCodes.Services/1.0.0": {
+      "type": "project",
+      "path": "../MeetCode.Services/project.json",
+      "msbuildProject": "../MeetCode.Services/MeetCodes.Services.xproj"
     }
   },
   "projectFileDependencyGroups": {
