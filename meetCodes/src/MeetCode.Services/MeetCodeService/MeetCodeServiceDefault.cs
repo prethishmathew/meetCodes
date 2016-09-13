@@ -20,7 +20,15 @@ namespace meetCodes.Services.MeetCodeService
 
         public async Task<MeetCodesDto> CreateMeetCodesAsync(MeetCodesDto meetCodeDto)
         {
-            await Task.Run(() => _unitOfWork.MeetCodeRepository.Insert(Mapper.Map<MeetCodesDto, MeetCode>(meetCodeDto)));
+            await Task.Run(() =>
+                {
+                    _unitOfWork.MeetCodeRepository.Insert(Mapper.Map<MeetCodesDto, MeetCode>(meetCodeDto));
+                    _unitOfWork.Save();
+                }
+            
+            
+            );
+
             return meetCodeDto;
         }
 

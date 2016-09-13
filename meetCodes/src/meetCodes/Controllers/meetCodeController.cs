@@ -6,6 +6,7 @@ using MeetCodes.MeetCodeDTO;
 namespace meetCodes.Controllers
 {
     [Route("api/v1/meetcodes")]
+    [Produces("application/json")]
     public class MeetCodeController:Controller
     {
         private readonly IMeetCodeService _meetCodeService;
@@ -20,7 +21,7 @@ namespace meetCodes.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(MeetCodesDto meetCode)
+        public async Task<IActionResult> Post([FromBody]MeetCodesDto meetCode)
         {
             return Ok(await _meetCodeService.CreateMeetCodesAsync(meetCode));
         }

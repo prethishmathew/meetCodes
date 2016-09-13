@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MeetCodes.Plugins;
+using Swashbuckle.Swagger.Model;
 
 namespace meetCodes
 {
@@ -41,6 +42,18 @@ namespace meetCodes
             services.AddMvc();
             services.InjectDependencies();
             AutoMapperConfig.Map();
+            services.AddSwaggerGen(c =>
+            {
+                c.SingleApiVersion(new Info
+                {
+                    Version = "v1",
+                    Title = "Swashbuckle Sample API",
+                    Description = "A sample API for testing Swashbuckle",
+                    TermsOfService = "Some terms ..."
+                });
+
+              
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -54,6 +67,11 @@ namespace meetCodes
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseMvc();
+            app.UseSwagger((httpRequest, swaggerDoc) =>
+            {
+                swaggerDoc.Host = httpRequest.Host.Value;
+            });
+            app.UseSwaggerUi();
         }
     }
 }

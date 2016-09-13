@@ -12,7 +12,14 @@ namespace MeetCodes.Data.Models
         public virtual string CodeString
         {
             get { return Base36.Encode(Code); }
-            set { this.Code = Base36.Decode(value); }
+            set
+            {
+                if (value != null)
+                {
+                    this.Code = Base36.Decode(value);
+                }
+                
+            }
         }
 
         public virtual string Description { get; set; }
