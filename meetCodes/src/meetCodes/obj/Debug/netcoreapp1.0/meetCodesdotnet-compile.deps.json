@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "6c980306ba42f16afa55e6f4fc15e49ca504eade"
+    "signature": "38a190ca1289fa9839be75fab956b226f8400584"
   },
   "compilationOptions": {
     "defines": [
@@ -30,10 +30,25 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "MeetCode.Services": "1.0.0",
           "MeetCodes.Data": "1.0.0",
-          "MeetCodes.Plugins": "1.0.0"
+          "MeetCodes.Plugins": "1.0.0",
+          "MeetCodes.MeetCodeDTO": "1.0.0",
+          "AutoMapper": "5.1.1"
         },
         "compile": {
           "meetCodes.dll": {}
+        }
+      },
+      "AutoMapper/5.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "NETStandard.Library": "1.6.0",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -1401,6 +1416,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         }
       },
       "System.ComponentModel/4.0.1": {
@@ -2749,7 +2767,9 @@
       },
       "MeetCode.Services/1.0.0": {
         "dependencies": {
+          "AutoMapper": "5.1.1",
           "MeetCodes.Data": "1.0.0",
+          "MeetCodes.MeetCodeDTO": "1.0.0",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -2764,6 +2784,14 @@
         },
         "compile": {
           "MeetCodes.Data.dll": {}
+        }
+      },
+      "MeetCodes.MeetCodeDTO/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "MeetCodes.MeetCodeDTO.dll": {}
         }
       },
       "MeetCodes.Plugins/1.0.0": {
@@ -2794,10 +2822,25 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "MeetCode.Services": "1.0.0",
           "MeetCodes.Data": "1.0.0",
-          "MeetCodes.Plugins": "1.0.0"
+          "MeetCodes.Plugins": "1.0.0",
+          "MeetCodes.MeetCodeDTO": "1.0.0",
+          "AutoMapper": "5.1.1"
         },
         "runtime": {
           "meetCodes.dll": {}
+        }
+      },
+      "AutoMapper/5.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "NETStandard.Library": "1.6.0",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -5390,7 +5433,9 @@
       },
       "MeetCode.Services/1.0.0": {
         "dependencies": {
+          "AutoMapper": "5.1.1",
           "MeetCodes.Data": "1.0.0",
+          "MeetCodes.MeetCodeDTO": "1.0.0",
           "NETStandard.Library": "1.6.0"
         },
         "runtime": {
@@ -5405,6 +5450,14 @@
         },
         "runtime": {
           "MeetCodes.Data.dll": {}
+        }
+      },
+      "MeetCodes.MeetCodeDTO/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "MeetCodes.MeetCodeDTO.dll": {}
         }
       },
       "MeetCodes.Plugins/1.0.0": {
@@ -5424,6 +5477,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q3uFSWccBUE1Q9BW88C6RO2Y/iFkPztTKK1ciyx1jhWPdOi5+pvzZ2EwcJKPiV0cr2EXZUWqQOsSpA5jVjfQBg=="
     },
     "Libuv/1.9.0": {
       "type": "package",
@@ -6431,6 +6489,11 @@
       "sha512": ""
     },
     "MeetCodes.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeetCodes.MeetCodeDTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using AutoMapper;
 using MeetCodes.Data.Models;
 using MeetCodes.Data.UnitOfWork;
-
+using MeetCodes.MeetCodeDTO;
 namespace meetCodes.Services.MeetCodeService
 {
     public class MeetCodeServiceDefault:IMeetCodeService
@@ -12,15 +12,16 @@ namespace meetCodes.Services.MeetCodeService
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<MeetCode> GetMeetCodesAsync(string id)
-        {
-            return await Task.Run(() => _unitOfWork.MeetCodeRepository.GetById(id));
+        public async Task<MeetCodesDto> GetMeetCodesAsync(string id)
+        {            
+            return await Task.Run(() => 
+                Mapper.Map<MeetCode, MeetCodesDto>(_unitOfWork.MeetCodeRepository.GetById(id)));
         }
 
-        public async Task<MeetCode> CreateMeetCodesAsync(MeetCode meetCode)
+        public async Task<MeetCodesDto> CreateMeetCodesAsync(MeetCodesDto meetCodeDto)
         {
-            await Task.Run(() => _unitOfWork.MeetCodeRepository.Insert(meetCode));
-            return meetCode;
+            await Task.Run(() => _unitOfWork.MeetCodeRepository.Insert(Mapper.Map<MeetCodesDto, MeetCode>(meetCodeDto)));
+            return meetCodeDto;
         }
 
        

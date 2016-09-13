@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Reflection;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using mstum.utils;
 
 namespace MeetCodes.Data.Models
 {
@@ -11,6 +7,14 @@ namespace MeetCodes.Data.Models
     {
 
         public virtual long Code { get; set; }
+
+        [NotMapped]
+        public virtual string CodeString
+        {
+            get { return Base36.Encode(Code); }
+            set { this.Code = Base36.Decode(value); }
+        }
+
         public virtual string Description { get; set; }
         public virtual string Address1 { get; set; }
         public virtual string Address2 { get; set; }

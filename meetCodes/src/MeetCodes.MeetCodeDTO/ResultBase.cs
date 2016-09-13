@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace MeetCodes.MeetCodeDTO
+﻿namespace MeetCodes.MeetCodeDTO
 {
     public class ResultBase 
     {
+        public ResultBase()
+        {
+            ResultSuccess = "Success";
+            ResultCode = "0";
+            ResultMessage = "";
+
+        }
         public string ResultSuccess { get; set; }
 
         public string ResultCode { get; set; }

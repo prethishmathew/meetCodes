@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using MeetCodes.Data.InterFace;
 using MeetCodes.Data.Repository;
 

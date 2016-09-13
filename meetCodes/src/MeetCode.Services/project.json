@@ -2,7 +2,9 @@
   "version": "1.0.0-*",
 
   "dependencies": {
+    "AutoMapper": "5.1.1",
     "MeetCodes.Data": "1.0.0-*",
+    "MeetCodes.MeetCodeDTO": "1.0.0-*",
     "NETStandard.Library": "1.6.0"
   },
 

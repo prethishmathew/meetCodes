@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using meetCodes.Services.MeetCodeService;
-using MeetCodes.Data.Models;
+using MeetCodes.MeetCodeDTO;
 
 namespace meetCodes.Controllers
 {
@@ -20,7 +20,7 @@ namespace meetCodes.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(MeetCode meetCode)
+        public async Task<IActionResult> Post(MeetCodesDto meetCode)
         {
             return Ok(await _meetCodeService.CreateMeetCodesAsync(meetCode));
         }

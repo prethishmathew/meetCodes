@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MeetCodes.Data.Models;
+﻿using System.Threading.Tasks;
+using MeetCodes.MeetCodeDTO;
 
 namespace meetCodes.Services.MeetCodeService
 {
     public interface IMeetCodeService
     {
-        Task<MeetCode> GetMeetCodesAsync(string id);
-        Task<MeetCode> CreateMeetCodesAsync(MeetCode meetCode);
+        Task<MeetCodesDto> GetMeetCodesAsync(string id);
+        Task<MeetCodesDto> CreateMeetCodesAsync(MeetCodesDto meetCode);
     }
 }

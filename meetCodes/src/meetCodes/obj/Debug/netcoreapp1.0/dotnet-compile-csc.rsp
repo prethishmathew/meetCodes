@@ -9,6 +9,7 @@
 -nologo
 "C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
 -out:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\bin\Debug\netcoreapp1.0\meetCodes.dll"
+-r:"C:\Users\pmathew\.nuget\packages\AutoMapper\5.1.1\lib\netstandard1.3\AutoMapper.dll"
 -r:"C:\Users\pmathew\.nuget\packages\Microsoft.ApplicationInsights\2.1.0\lib\dotnet5.4\Microsoft.ApplicationInsights.dll"
 -r:"C:\Users\pmathew\.nuget\packages\Microsoft.ApplicationInsights.AspNetCore\1.0.0\lib\netstandard1.6\Microsoft.ApplicationInsights.AspNetCore.dll"
 -r:"C:\Users\pmathew\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
@@ -96,6 +97,7 @@
 -r:"C:\Users\pmathew\.nuget\packages\System.Collections.Concurrent\4.0.12\ref\netstandard1.3\System.Collections.Concurrent.dll"
 -r:"C:\Users\pmathew\.nuget\packages\System.Collections.Immutable\1.2.0\lib\netstandard1.0\System.Collections.Immutable.dll"
 -r:"C:\Users\pmathew\.nuget\packages\System.Collections.NonGeneric\4.0.1\ref\netstandard1.3\System.Collections.NonGeneric.dll"
+-r:"C:\Users\pmathew\.nuget\packages\System.Collections.Specialized\4.0.1\ref\netstandard1.3\System.Collections.Specialized.dll"
 -r:"C:\Users\pmathew\.nuget\packages\System.ComponentModel\4.0.1\ref\netstandard1.0\System.ComponentModel.dll"
 -r:"C:\Users\pmathew\.nuget\packages\System.ComponentModel.Annotations\4.1.0\ref\netstandard1.4\System.ComponentModel.Annotations.dll"
 -r:"C:\Users\pmathew\.nuget\packages\System.ComponentModel.Primitives\4.1.0\ref\netstandard1.0\System.ComponentModel.Primitives.dll"
@@ -179,9 +181,11 @@
 -r:"C:\Users\pmathew\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCode.Services\bin\Debug\netstandard1.6\MeetCode.Services.dll"
 -r:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Data\bin\Debug\netstandard1.6\MeetCodes.Data.dll"
+-r:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.MeetCodeDTO\bin\Debug\netstandard1.6\MeetCodes.MeetCodeDTO.dll"
 -r:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\MeetCodes.Plugins\bin\Debug\netstandard1.6\MeetCodes.Plugins.dll"
 -resource:"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\obj\Debug\netcoreapp1.0\meetCodesdotnet-compile.deps.json",meetCodes.deps.json
 "C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Program.cs"
 "C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Startup.cs"
+"C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Config\AutoMapperConfig.cs"
 "C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Controllers\meetCodeController.cs"
 "C:\Users\pmathew\Documents\Personal\repository\meetCodes\meetCodes\src\meetCodes\Controllers\ValuesController.cs"
